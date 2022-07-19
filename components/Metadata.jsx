@@ -1,8 +1,8 @@
-import Head from "next/head";
-import React from "react";
-import Script from "next/script";
+import Head from 'next/head'
+import React from 'react'
+import Script from 'next/script'
 
-function Metadata({ title }) {
+function Metadata({title}) {
   return (
     <>
       <Head>
@@ -43,11 +43,11 @@ function Metadata({ title }) {
             gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
               page_path: window.location.pathname,
             });
-          `,
+          `
         }}
       />
     </>
-  );
+  )
 }
 
-export default Metadata;
+export default Metadata
