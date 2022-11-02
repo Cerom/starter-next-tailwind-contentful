@@ -19,6 +19,10 @@ This is a [`Next.js 12`](https://nextjs.org/) project loaded with [`Tailwind CSS
 
 - Import it on every /page files to set the page's metadata
 
+## Contentful export.json
+
+- Import a minimal Contentful Content Types set including : A home page, a hero section, a cta button.
+
 <br/>
 
 # Getting Started
