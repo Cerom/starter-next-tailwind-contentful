@@ -9,7 +9,7 @@ This is a [`Next.js 12`](https://nextjs.org/) project loaded with [`Tailwind CSS
 
 ## SectionMachine.jsx
 
-- Synced with Contentful to render the Sections list on the PAGE content
+- Allow sections reordering from the CMS. Renders appropriate components from the `/sections` folder based on the sections list in Contentful.
 
 ## Context.jsx
 
