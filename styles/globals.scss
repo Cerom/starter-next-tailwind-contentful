@@ -2,18 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "/fonts/fonts.css";
+@import '/fonts/fonts.css';
 
 html,
 body {
   padding: 0;
   margin: 0;
+  // font-family: 'Futura';
+  font-weight: normal;
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
+main {
+  position: relative;
 }
 
 section {
-  padding: 0 2rem;
-  margin: auto;
-  max-width: 1250px;
+  position: relative;
 }
 
 h1,
@@ -24,13 +30,14 @@ h5,
 h6 {
   font-weight: bold;
 }
+
 h1 {
   font-size: 3em;
   text-align: center;
-  line-height: 1;
+  line-height: 1.2;
   margin: 2rem 0;
   @media screen and (max-width: 768px) {
-    font-size: 2em;
+    font-size: 2.9em;
   }
 }
 h2 {

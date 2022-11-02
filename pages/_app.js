@@ -1,15 +1,15 @@
-import "../styles/globals.scss";
-import { ParallaxProvider } from "react-scroll-parallax";
-import { ContextProvider } from "../utils/Context";
+import '../styles/globals.scss'
+import {ParallaxProvider} from 'react-scroll-parallax'
+import {ContextProvider} from '../utils/Context'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({Component, pageProps}) {
   return (
     <ContextProvider>
       <ParallaxProvider>
         <Component {...pageProps} />
       </ParallaxProvider>
     </ContextProvider>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp

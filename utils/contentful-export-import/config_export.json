@@ -1,0 +1,14 @@
+{
+  "spaceId": "",
+  "managementToken": "",
+  "saveFile": true,
+  "contentFile": "export.json",
+  "includeDrafts": false,
+  "includeArchived": false,
+  "skipContentModel": false,
+  "skipContent": false,
+  "skipRoles": true,
+  "skipWebhooks": true,
+  "contentOnly": false,
+  "downloadAssets": false
+}

@@ -8,25 +8,31 @@ function Metadata({title}) {
       <Head>
         <title>{title}</title>
         <link rel="shortcut icon" href="/images/logo.png" />
-        <meta name="description" content="//TODO INIT" />
+        <meta name="description" content="EPLEM drinks official website" />
 
-        <meta property="og:url" content="https:////TODO INIT" />
+        <meta property="og:url" content="https://eplem.co" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="//TODO INIT" />
-        <meta property="og:description" content="//TODO INIT" />
+        <meta property="og:title" content="EPLEM drinks" />
+        <meta
+          property="og:description"
+          content="EPLEM drinks official website"
+        />
         <meta
           property="og:image"
-          content="https:////TODO INIT/images/banner.jpg"
+          content="https://eplem.co/images/banner.jpg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="//TODO INIT" />
-        <meta property="twitter:url" content="https:////TODO INIT" />
-        <meta name="twitter:title" content="//TODO INIT" />
-        <meta name="twitter:description" content="//TODO INIT" />
+        <meta property="twitter:domain" content="eplem.co" />
+        <meta property="twitter:url" content="https://eplem.co" />
+        <meta name="twitter:title" content="EPLEM drinks" />
+        <meta
+          name="twitter:description"
+          content="EPLEM drinks official website"
+        />
         <meta
           name="twitter:image"
-          content="https:////TODO INIT/images/banner.jpg"
+          content="https://eplem.co/images/banner.jpg"
         />
       </Head>
       <Script

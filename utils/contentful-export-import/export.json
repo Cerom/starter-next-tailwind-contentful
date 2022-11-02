@@ -1,0 +1,2215 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "pageHome",
+        "type": "ContentType",
+        "createdAt": "2022-11-02T09:54:19.762Z",
+        "updatedAt": "2022-11-02T11:30:28.453Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2022-11-02T11:30:28.453Z",
+        "firstPublishedAt": "2022-11-02T09:54:20.091Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "displayField": "pageTitle",
+      "name": "PAGE home",
+      "description": "",
+      "fields": [
+        {
+          "id": "pageTitle",
+          "name": "Page Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "listSections",
+          "name": "List Sections",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "sectionHero"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "listSocials",
+          "name": "List socials",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "itemSocial"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "sectionHero",
+        "type": "ContentType",
+        "createdAt": "2022-11-02T10:02:36.162Z",
+        "updatedAt": "2022-11-02T10:33:21.457Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-11-02T10:33:21.457Z",
+        "firstPublishedAt": "2022-11-02T10:02:36.533Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "displayField": "titleNavbar",
+      "name": "SECTION hero",
+      "description": "",
+      "fields": [
+        {
+          "id": "titleNavbar",
+          "name": "Title navbar",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "navbar",
+          "name": "Navbar",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "defaultValue": {
+            "en-US": false
+          },
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cta",
+          "name": "CTA",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "itemButton"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "itemButton",
+        "type": "ContentType",
+        "createdAt": "2022-11-02T10:32:46.830Z",
+        "updatedAt": "2022-11-02T10:32:47.126Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2022-11-02T10:32:47.126Z",
+        "firstPublishedAt": "2022-11-02T10:32:47.126Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "ITEM button",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "newTabLink",
+          "name": "New tab link",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "itemSocial",
+        "type": "ContentType",
+        "createdAt": "2022-11-02T11:29:59.422Z",
+        "updatedAt": "2022-11-02T11:29:59.688Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2022-11-02T11:29:59.688Z",
+        "firstPublishedAt": "2022-11-02T11:29:59.688Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "ITEM social",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "logo",
+          "name": "Logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "url",
+          "name": "Url",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "w3o9p63wrva9",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 8,
+        "createdAt": "2022-11-02T09:54:20.157Z",
+        "createdBy": {
+          "sys": {
+            "id": "5MRG9VQQMCur5YvJIc4TnZ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-11-02T11:30:28.971Z",
+        "updatedBy": {
+          "sys": {
+            "id": "5MRG9VQQMCur5YvJIc4TnZ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "pageHome",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "pageTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "listSections",
+          "widgetId": "entryCardsEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "listSocials",
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "w3o9p63wrva9",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2022-11-02T10:02:36.593Z",
+        "createdBy": {
+          "sys": {
+            "id": "5MRG9VQQMCur5YvJIc4TnZ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-11-02T10:33:22.112Z",
+        "updatedBy": {
+          "sys": {
+            "id": "5MRG9VQQMCur5YvJIc4TnZ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "sectionHero",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "titleNavbar",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "navbar",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "cta",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "w3o9p63wrva9",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2022-11-02T10:32:47.184Z",
+        "createdBy": {
+          "sys": {
+            "id": "5MRG9VQQMCur5YvJIc4TnZ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-11-02T10:32:49.252Z",
+        "updatedBy": {
+          "sys": {
+            "id": "5MRG9VQQMCur5YvJIc4TnZ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "itemButton",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "newTabLink",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "w3o9p63wrva9",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2022-11-02T11:29:59.743Z",
+        "createdBy": {
+          "sys": {
+            "id": "5MRG9VQQMCur5YvJIc4TnZ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2022-11-02T11:30:00.254Z",
+        "updatedBy": {
+          "sys": {
+            "id": "5MRG9VQQMCur5YvJIc4TnZ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "itemSocial",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "logo",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "url",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "2FDJUAB65d3Ylu22ZCDAzi",
+        "type": "Entry",
+        "createdAt": "2022-11-02T10:02:45.728Z",
+        "updatedAt": "2022-11-02T12:20:59.188Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2022-11-02T12:20:59.188Z",
+        "firstPublishedAt": "2022-11-02T10:03:31.091Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pageHome"
+          }
+        }
+      },
+      "fields": {
+        "pageTitle": {
+          "en-US": "Website name"
+        },
+        "listSections": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5MgPbEiYTxAVL3HZo4t9P6"
+              }
+            }
+          ]
+        },
+        "listSocials": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3JZppWSt2aN5QDjVeVzTGQ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "2QquBCeIAPbRdaU6nRJthF"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "5MgPbEiYTxAVL3HZo4t9P6",
+        "type": "Entry",
+        "createdAt": "2022-11-02T10:03:08.119Z",
+        "updatedAt": "2022-11-02T10:03:27.336Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-11-02T10:03:27.336Z",
+        "firstPublishedAt": "2022-11-02T10:03:27.336Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "sectionHero"
+          }
+        }
+      },
+      "fields": {
+        "titleNavbar": {
+          "en-US": "Welcome"
+        },
+        "navbar": {
+          "en-US": false
+        },
+        "title": {
+          "en-US": " Welcome on the website"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "3JZppWSt2aN5QDjVeVzTGQ",
+        "type": "Entry",
+        "createdAt": "2022-11-02T12:20:02.168Z",
+        "updatedAt": "2022-11-02T12:20:20.295Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-11-02T12:20:20.295Z",
+        "firstPublishedAt": "2022-11-02T12:20:20.295Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "itemSocial"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Instagram"
+        },
+        "logo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1o8HU7Bw39tWrGpkTWl2JJ"
+            }
+          }
+        },
+        "url": {
+          "en-US": "https://instagram.com"
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "2QquBCeIAPbRdaU6nRJthF",
+        "type": "Entry",
+        "createdAt": "2022-11-02T12:20:26.261Z",
+        "updatedAt": "2022-11-02T12:20:55.973Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-11-02T12:20:55.973Z",
+        "firstPublishedAt": "2022-11-02T12:20:55.973Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "itemSocial"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Spotify"
+        },
+        "logo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "MgKHhM10gO6hYK0PDsv4o"
+            }
+          }
+        },
+        "url": {
+          "en-US": "https://spotify.com"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "4rh9JqyYXBZ6tcalkkdsDm",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:40.942Z",
+        "updatedAt": "2022-11-02T12:19:26.836Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.836Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.836Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "FACEBOOK"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/4rh9JqyYXBZ6tcalkkdsDm/f3390edabf6eb9e45dc2602b39be6000/FACEBOOK.svg",
+            "details": {
+              "size": 312,
+              "image": {
+                "width": 52,
+                "height": 94
+              }
+            },
+            "fileName": "FACEBOOK.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "50LINIrong1luLq2RBvMUo",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:40.976Z",
+        "updatedAt": "2022-11-02T12:19:26.852Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.852Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.852Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "BEHANCE"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/50LINIrong1luLq2RBvMUo/e998a23e8a20a0a37face9510ad709df/BEHANCE.svg",
+            "details": {
+              "size": 836,
+              "image": {
+                "width": 119,
+                "height": 73
+              }
+            },
+            "fileName": "BEHANCE.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "686j0TPz9Xdsmsf2KKvtaQ",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:41.034Z",
+        "updatedAt": "2022-11-02T12:19:26.871Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.871Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.871Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "DRIBBBLE"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/686j0TPz9Xdsmsf2KKvtaQ/2337a09f869c7dec96c6be6f3d27ab2b/DRIBBBLE.svg",
+            "details": {
+              "size": 976,
+              "image": {
+                "width": 96,
+                "height": 96
+              }
+            },
+            "fileName": "DRIBBBLE.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "6gAYNs6OGqssaGMD8AH40D",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:41.069Z",
+        "updatedAt": "2022-11-02T12:19:26.859Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.859Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.859Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "GOOGLE"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/6gAYNs6OGqssaGMD8AH40D/7321e695b5b3ffe2a759fcbd6671b84e/GOOGLE.svg",
+            "details": {
+              "size": 526,
+              "image": {
+                "width": 85,
+                "height": 85
+              }
+            },
+            "fileName": "GOOGLE.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "1NkHpFvjPF1ahsEHvRkbrw",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:41.113Z",
+        "updatedAt": "2022-11-02T12:19:26.865Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.865Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.865Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "BLOGGER"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/1NkHpFvjPF1ahsEHvRkbrw/7f5fe79059b963b7f17250bd1d2f0142/BLOGGER.svg",
+            "details": {
+              "size": 631,
+              "image": {
+                "width": 72,
+                "height": 72
+              }
+            },
+            "fileName": "BLOGGER.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "1qpUD3VI4oA1CnWjSkjsra",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:41.187Z",
+        "updatedAt": "2022-11-02T12:19:26.846Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.846Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.846Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "DISCORD"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/1qpUD3VI4oA1CnWjSkjsra/e579835addef8504c413e28ec2489696/DISCORD.svg",
+            "details": {
+              "size": 848,
+              "image": {
+                "width": 95,
+                "height": 74
+              }
+            },
+            "fileName": "DISCORD.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "2Qx4b7vC8XdbLCd6Jg3XGV",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:41.914Z",
+        "updatedAt": "2022-11-02T12:19:26.759Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.759Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.759Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "REDDIT"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/2Qx4b7vC8XdbLCd6Jg3XGV/2c2b77a9097bcb08c089521587501d9b/REDDIT.svg",
+            "details": {
+              "size": 824,
+              "image": {
+                "width": 94,
+                "height": 84
+              }
+            },
+            "fileName": "REDDIT.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "cDaVvmb8PYmeXx9g8IP8Y",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:41.918Z",
+        "updatedAt": "2022-11-02T12:19:26.791Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.791Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.791Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "MESSENGER"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/cDaVvmb8PYmeXx9g8IP8Y/84cef723940833196932206bbab5dd38/MESSENGER.svg",
+            "details": {
+              "size": 617,
+              "image": {
+                "width": 77,
+                "height": 77
+              }
+            },
+            "fileName": "MESSENGER.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "15wxvfg2CntDuN9rTt5uWK",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:41.941Z",
+        "updatedAt": "2022-11-02T12:19:26.827Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.827Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.827Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "PINTEREST"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/15wxvfg2CntDuN9rTt5uWK/d3eae65d02f33d0945ade4a72d2bee3c/PINTEREST.svg",
+            "details": {
+              "size": 812,
+              "image": {
+                "width": 74,
+                "height": 95
+              }
+            },
+            "fileName": "PINTEREST.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "3kMDCX3YaQcqJ1TOXnafyF",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:42.022Z",
+        "updatedAt": "2022-11-02T12:19:26.782Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.782Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.782Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "LINKEDIN"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/3kMDCX3YaQcqJ1TOXnafyF/d016b7bc48166c4c9c47272d09a97b04/LINKEDIN.svg",
+            "details": {
+              "size": 443,
+              "image": {
+                "width": 94,
+                "height": 94
+              }
+            },
+            "fileName": "LINKEDIN.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "2z3sM23rPyPJEmTvjeU05H",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:42.033Z",
+        "updatedAt": "2022-11-02T12:19:26.771Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.771Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.771Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "LOCATION"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/2z3sM23rPyPJEmTvjeU05H/cc0e74993ce38a57b0dedc0926926a51/LOCATION.svg",
+            "details": {
+              "size": 501,
+              "image": {
+                "width": 64,
+                "height": 82
+              }
+            },
+            "fileName": "LOCATION.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "1o8HU7Bw39tWrGpkTWl2JJ",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:42.039Z",
+        "updatedAt": "2022-11-02T12:19:26.797Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.797Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.797Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "INSTAGRAM"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/1o8HU7Bw39tWrGpkTWl2JJ/a1afe2cc692cf9cd4f0e2fe6420e38fb/INSTAGRAM.svg",
+            "details": {
+              "size": 598,
+              "image": {
+                "width": 97,
+                "height": 97
+              }
+            },
+            "fileName": "INSTAGRAM.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "5TXSRlhZ9rRdEpg3yC4xhl",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:42.877Z",
+        "updatedAt": "2022-11-02T12:19:26.741Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.741Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.741Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "SKYPE"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/5TXSRlhZ9rRdEpg3yC4xhl/5cf4a1555e3692a37dfdcd16a7be9407/SKYPE.svg",
+            "details": {
+              "size": 588,
+              "image": {
+                "width": 69,
+                "height": 83
+              }
+            },
+            "fileName": "SKYPE.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "1edsYQ1W3XgY8f5Z3osAAh",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:42.878Z",
+        "updatedAt": "2022-11-02T12:19:26.734Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.734Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.734Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "TELEGRAM"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/1edsYQ1W3XgY8f5Z3osAAh/aecacc1f79893bd9e720bca9f815d7b0/TELEGRAM.svg",
+            "details": {
+              "size": 423,
+              "image": {
+                "width": 85,
+                "height": 70
+              }
+            },
+            "fileName": "TELEGRAM.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "3FMQrjR8qqQB5oqGYQa5OM",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:42.894Z",
+        "updatedAt": "2022-11-02T12:19:26.726Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.726Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.726Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "TIKTOK"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/3FMQrjR8qqQB5oqGYQa5OM/c7de0f566af80181ea7928b3cb9c8e72/TIKTOK.svg",
+            "details": {
+              "size": 1647,
+              "image": {
+                "width": 76,
+                "height": 85
+              }
+            },
+            "fileName": "TIKTOK.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "3WRPmZtQyRiahcK5OtGu9C",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:42.901Z",
+        "updatedAt": "2022-11-02T12:19:26.753Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.753Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.753Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "SNAPCHAT"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/3WRPmZtQyRiahcK5OtGu9C/17c3f5170feb56495787a81b911d08df/SNAPCHAT.svg",
+            "details": {
+              "size": 1470,
+              "image": {
+                "width": 82,
+                "height": 81
+              }
+            },
+            "fileName": "SNAPCHAT.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "id": "MgKHhM10gO6hYK0PDsv4o",
+        "type": "Asset",
+        "createdAt": "2022-11-02T12:18:42.910Z",
+        "updatedAt": "2022-11-02T12:19:26.747Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2022-11-02T12:19:26.747Z",
+        "firstPublishedAt": "2022-11-02T12:19:26.747Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5MRG9VQQMCur5YvJIc4TnZ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "SPOTIFY"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/w3o9p63wrva9/MgKHhM10gO6hYK0PDsv4o/5e1363e726a16eae0ab282c4e0478054/SPOTIFY.svg",
+            "details": {
+              "size": 804,
+              "image": {
+                "width": 89,
+                "height": 89
+              }
+            },
+            "fileName": "SPOTIFY.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "0o2Q2WEBWla1h0L7RrBcUd",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "w3o9p63wrva9"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "edc38325-767b-416e-899c-1336776556d3"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17xOJdyilvqWks468DK5OC"
+          }
+        },
+        "createdAt": "2022-11-02T08:12:43Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "17xOJdyilvqWks468DK5OC"
+          }
+        },
+        "updatedAt": "2022-11-02T08:12:43Z"
+      }
+    }
+  ]
+}
