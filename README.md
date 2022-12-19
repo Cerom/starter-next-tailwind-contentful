@@ -1,4 +1,4 @@
-This is a [`Next.js 12`](https://nextjs.org/) project loaded with [`Tailwind CSS`](https://tailwindcss.com/) and [`Contentful headless CMS`](https://www.contentful.com/).
+This is a [`Next.js 13`](https://nextjs.org/) project loaded with [`Tailwind CSS`](https://tailwindcss.com/) and [`Contentful headless CMS`](https://www.contentful.com/).
 
 # What's included
 
