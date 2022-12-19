@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '/fonts/fonts.css';
+// @import '/fonts/fonts.css';
 
 html,
 body {
@@ -10,8 +10,18 @@ body {
   margin: 0;
   // font-family: 'Futura';
   font-weight: normal;
-  width: 100vw;
+  // width: 100vw;
   scroll-behavior: smooth;
+}
+html {
+  min-height: 100vh;
+  height: 1px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
 }
 
 main {

@@ -4,9 +4,7 @@ import Background from './Background'
 function Section({title, background, children, id, className}) {
   return (
     <section id={encodeURIComponent(id)} className={className}>
-      {background && (
-        <Background color={background} stickyNbSlides={slidesNumber} />
-      )}
+      {background && <Background color={background} />}
       <div className="relative p-8 h-full">
         <div className="max-w-7xl m-auto h-full">
           <div

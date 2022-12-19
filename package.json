@@ -10,14 +10,14 @@
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.12.1",
+    "@next/font": "^13.0.7",
     "contentful": "^9.1.32",
     "fast-safe-stringify": "^2.1.1",
     "framer-motion": "^6.3.13",
-    "next": "12.1.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^13.0.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.4.0",
-    "react-scroll-parallax": "^3.2.0",
     "react-use-scroll-direction": "^0.1.0",
     "sass": "^1.53.0",
     "sharp": "^0.31.1"
@@ -25,8 +25,10 @@
   "devDependencies": {
     "autoprefixer": "^10.4.7",
     "eslint": "8.18.0",
-    "eslint-config-next": "12.1.6",
+    "eslint-config-next": "^13.0.7",
     "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.4"
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.4"
   }
 }

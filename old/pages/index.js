@@ -1,10 +1,10 @@
 import {useContext, useEffect, useMemo, useRef, useState} from 'react'
-import Footer from '../components/Footer'
-import Metadata from '../components/Metadata'
-import Navbar from '../components/Navbar'
-import SectionMachine from '../components/SectionMachine'
-import Context from '../utils/Context'
-import useScrollProgress from '../utils/hooks/useScrollProgress'
+import Footer from '../../components/Footer'
+import Metadata from '../../components/Metadata'
+import Navbar from '../../components/Navbar'
+import SectionMachine from '../../components/SectionMachine'
+import Context from '../../utils/Context'
+import useScrollProgress from '../../utils/hooks/useScrollProgress'
 
 export default function Home({homeDataFr, homeDataEn}) {
   const ref = useRef()

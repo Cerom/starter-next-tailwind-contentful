@@ -15,6 +15,9 @@ module.exports = {
       textColor: {
         themeoffwhite: '#ECE9E6'
       }
+      // fontFamily: {
+      //   roboto: ['var(--font-roboto)']
+      // }
     }
   },
   plugins: []

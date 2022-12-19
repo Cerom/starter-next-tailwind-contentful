@@ -2,7 +2,7 @@ import React from 'react'
 import SectionHero from '../sections/SectionHero'
 
 function SectionMachine({pages}) {
-  return pages.map((section, index) => {
+  return pages?.map((section, index) => {
     // const isEven = index % 2 === 0
 
     switch (section.sys.contentType.sys.id) {
